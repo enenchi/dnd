@@ -1,0 +1,58 @@
+<p>
+This scope appears to be a normal scope at first glance.
+Upon closer inspection, the two lenses at each end of the scope an be detached and its base morphs to attach to most surfaces.
+<br><br>
+Each end of the scope acts as a modified, constant <a href="https://www.d20pfsrd.com/magic/all-spells/s/scrying/">scrying</a> spell that scries on the other.
+In effect, looking through one lens lets the user see out the opposite side of the other lens and vice versa for both sides of the lenses.
+Most spells requiring line of sight can be cast through the lenses and have a 20% chance of success per caster level.
+In addition, the following spells have a 100% success chance: <a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-chaos">detect chaos</a>, <a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-evil">detect evil</a>, <a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-good">detect good</a>, <a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-law">detect law</a>, <a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>, and <a href="https://www.d20pfsrd.com/magic/all-spells/s/m/message">message</a>.
+<br><br>
+Each lens can be worn as a monocle and the holder of the body of the scope knows where each lens is as if it were affected by <a href="https://www.d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a> instead of a locale.
+Once per day, the body of the scope can be used to return (via <a href="https://www.d20pfsrd.com/magic/all-spells/t/teleport/">teleport</a>) both lenses to it.
+<br><br>
+When using both lenses attached to the scope, the user gains a +3 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">cicumstance</a> bonus to <a href="https://www.d20pfsrd.com/skills/perception">perception</a>.
+When also mounted to a ranged weapon, the user gains a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">cicumstance</a> bonus to <a href="https://www.d20pfsrd.com/Gamemastering/Combat/#TOC-Attack-Roll">attack</a> and the weapon's range increment increase by 10 ft.
+<br><br>
+Once a day, the scope gains one charge of a random detect spell.
+This refreshes at midnight and any user automatically knows which spell is contained.
+Activating this does not require a <a href="https://www.d20pfsrd.com/skills/use-magic-device/">use magic device</a> check and does not require concentration to maintain, but once active, it lasts the full duration. 
+</p>
+<table id="detect-spell-table">
+    <thead>
+        <tr>
+            <th>Result</th>
+            <th>Spell</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="range">0-19</td>
+            <td><a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-chaos">Detect chaos</a></td>
+        </tr>
+        <tr>
+            <td class="range">20-39</td>
+            <td><a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-evil">Detect evil</a></td>
+        </tr>
+        <tr>
+            <td class="range">40-59</td>
+            <td><a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-good">Detect good</a></td>
+        </tr>
+        <tr>
+            <td class="range">60-79</td>
+            <td><a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-law">Detect law</a></td>
+        </tr>
+        <tr>
+            <td class="range">80-99</td>
+            <td><a href="https://www.d20pfsrd.com/magic/all-spells/d/detect-magic">Detect magic</a></td>
+        </tr>
+    </tbody>
+</table>
+<button type="button" onclick="detect_roller.roll()">Roll Table</button>
+<p>
+Additionally, once per day, if the lenses and scope are together, it can be used to cast <a href="https://www.d20pfsrd.com/magic/all-spells/m/mending/">mending</a> on the object it's attached to.
+</p>
+
+<script src="/dnd/js/table.js"></script>
+<script>
+var detect_roller = new TableRoller("#detect-spell-table", ".range", 0, TableRoller.LIGHT_BLUE);
+</script>

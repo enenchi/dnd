@@ -1,0 +1,12 @@
+{
+    "name": "<mark>Immense</mark> house... in a <mark>Shining</mark>... Lantern?",
+    "aura": "moderate <a href=\"https://www.d20pfsrd.com/magic#TOC-Transmutation\">transmutation</a> [fire, light]",
+    "cl": "16th",
+    "slot": "-",
+    "price": "-",
+    "weight": "3 lbs.",
+    "feats": "<a href=\"https://www.d20pfsrd.com/feats/item-creation-feats/craft-wondrous-item-item-creation\">Craft Wondrous Item</a>",
+    "spells": "<a href=\"https://www.d20pfsrd.com/magic/all-spells/c/continual-flame/\">Continual Flame</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/d/dancing-lantern/\">Dancing Lantern</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/s/summon-instrument\">Summon Instrument</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/s/secret-chest/\">Secret Chest</a>",
+    "special_req": "<a href=\"https://www.d20pfsrd.com/magic/all-spells/c/continual-flame/\">Continual Flame</a> must be cast on the materials once by a <a href=\"https://www.d20pfsrd.com/classes/hybrid-classes/investigator/archetypes/paizo-investigator-archetypes/lamplighter-investigator-archetype/\">lamplighter</a> or everyday by another caster during the creation of this item",
+    "cost": "-"
+}

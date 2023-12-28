@@ -1,0 +1,12 @@
+{
+    "name": "<mark>Decisive</mark> Spellslinger's Clever Quiver",
+    "aura": "strong (no school)",
+    "cl": "13th",
+    "slot": "-",
+    "price": "-",
+    "weight": "2 lbs.",
+    "feats": "<a href=\"https://www.d20pfsrd.com/feats/item-creation-feats/craft-wondrous-item-item-creation\">Craft Wondrous Item</a>, <a href=\"https://www.d20pfsrd.com/feats/metamagic-feats/merciful-spell-metamagic\">Merciful Spell</a>, <a href=\"https://www.d20pfsrd.com/feats/metamagic-feats/elemental-spell-metamagic\">Elemental Spell</a>, <a href=\"https://www.d20pfsrd.com/feats/metamagic-feats/reach-spell-metamagic\">Reach Spell</a>, <a href=\"https://www.d20pfsrd.com/feats/metamagic-feats/delayed-spell-metamagic\">Delayed Spell</a>, <a href=\"https://www.d20pfsrd.com/feats/metamagic-feats/heighten-spell-metamagic\">Heighten Spell</a>",
+    "spells": "<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/secret-chest\">Secret Chest</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/r/reloading-hands/\">Reloading Hands</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/n/nondetection/\">Nondetection</a>",
+    "special_req": "-",
+    "cost": "-"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Weird Bag of <mark>Very Confusing</mark>, Very Weird Rocks",
+    "aura": "moderate <a href=\"https://www.d20pfsrd.com/magic#TOC-Conjuration\">conjuration</a>",
+    "cl": "9th",
+    "slot": "-",
+    "price": "-",
+    "weight": "20",
+    "feats":
+        "<a href=\"https://www.d20pfsrd.com/feats/item-creation-feats/craft-wondrous-item-item-creation\">Craft Wondrous Item</a>",
+    "spells":
+        "<a href=\"https://www.d20pfsrd.com/magic/all-spells/m/major-creation/\">Major Creation</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/\">Cure Light Wounds</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/i/instant-weapon/\">Instant Weapon</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/a/allfood/\">Allfood</a>",
+    "special_req": null,
+    "cost": "-"
+}

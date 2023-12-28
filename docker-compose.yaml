@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: ./app
+    volumes:
+      - ./css:/var/www/css
+      - ./dnd:/var/www/dnd
+      - ./js:/var/www/js
+      - ./index.html:/var/www/index.html
+      - ./.htaccess:/var/www/.htaccess
+    ports:
+      - 8080:80

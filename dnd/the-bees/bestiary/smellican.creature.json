@@ -1,0 +1,89 @@
+{
+    "type": "entry",
+    "creature": {
+        "name": "Smellican",
+        "cr": "2",
+        "alignment": "N",
+        "size": "Medium",
+        "type": "animal",
+        "init": 2,
+        "senses": {
+            "Perception": 8
+        },
+        "ac": {
+            "ac": 15,
+            "touch": 12,
+            "flat-footed": 13,
+            "src": [
+                {
+                    "name": "natural",
+                    "value": 3
+                }
+            ]
+        },
+        "health": {
+            "hp": 19,
+            "die": 8,
+            "hd": 3
+        },
+        "saves": {
+            "fort": 5,
+            "ref": 5,
+            "will": 3
+        },
+        "speeds": [
+            {
+                "type": null,
+                "speed": 30,
+                "unit": "ft.",
+                "modifier": null
+            },
+            {
+                "type": "fly",
+                "speed": 80,
+                "unit": "ft.",
+                "modifier": "(average)"
+            },
+            {
+                "type": "swim",
+                "speed": 20,
+                "unit": "ft.",
+                "modifier": null
+            }
+        ],
+        "attacks": {
+            "melee": ["2 claws +4 (1d4+1)", "bite +4 (1d4+1)"],
+            "ranged": ["spray +4 touch (musk)"],
+            "special attacks": ["musk"]
+        },
+        "abilityScores": {
+            "str": 12,
+            "dex": 15,
+            "con": 14,
+            "int": 2,
+            "wis": 15,
+            "cha": 7
+        },
+        "bab": 2,
+        "cmb": 3,
+        "cmd": 15,
+        "feats": [
+            {
+                "name": "Weapon Finesse",
+                "type": "combat",
+                "modifier": null
+            },
+            {
+                "name": "Ability Focus",
+                "type": "monster",
+                "modifier": "(musk)"
+            }
+        ],
+        "skills": [
+            { "name": "Fly",        "value": 8 },
+            { "name": "Perception", "value": 8 },
+            { "name": "Swim",       "value": 8 },
+            { "name": "Survival",   "value": 2 }
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "name": "Oozes",
+    "summary": {
+        "alignment": null,
+        "size": null,
+        "type": "ooze",
+        "init": "bad"
+    },
+    "defense": {
+        "acs": {
+            "ac": "low unless very small",
+            "touch": null,
+            "flat-footed": null
+        },
+        "hp": {
+            "hp": null,
+            "hd": null
+        },
+        "saves": {
+            "fort": null,
+            "ref": null,
+            "will": null
+        },
+        "fast healing": null,
+        "dr": null,
+        "immune": [ "poison", "sleep effects", "paralysis", "polymorph",
+            "stunning", "flanking", "critical hits"
+        ],
+        "weaknesses": [ null ]
+    },
+    "offense": {
+        "speeds": [
+            { "type": null, "speed": null, "unit": null }
+        ],
+        "attacks": {
+            "melee": [],
+            "ranged": [],
+            "special attacks": []
+        }
+    },
+    "statistics": {
+        "str": null,
+        "dex": null,
+        "con": null,
+        "int": null,
+        "wis": null,
+        "cha": null,
+        "bab": null,
+        "cmb": null,
+        "cmd": null,
+        "feats": [
+            { 
+                "name": null,
+                "type": null,
+                "modifier": null
+            }
+        ],
+        "skills": [
+            { "name": null, "value": null }
+        ]
+    },
+    "special abilities": [
+        {
+            "name": null,
+            "desc": null
+        }
+    ],
+    "ecology": {
+        "environment": null,
+        "organization": null
+    },
+    "notes": [
+        "mindless",
+        "blind",
+        "blindsight"
+    ]
+}

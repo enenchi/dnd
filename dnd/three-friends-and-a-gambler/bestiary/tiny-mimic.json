@@ -1,0 +1,127 @@
+{
+    "name": "Tiny Mimic",
+    "overviewPath": "descriptions/tiny-mimic/overview.html",
+    "cr": "4",
+    "alignment": "N",
+    "size": "Tiny",
+    "type": "aberration",
+    "subtype": "shapechanger",
+    "init": 6,
+    "senses": [
+        {
+            "type": "special-ability",
+            "name": "darkvision",
+            "value": "60 ft."
+        },
+        {
+            "type": "skill",
+            "name": "Perception",
+            "value": "+14"
+        }
+    ],
+    "ac": {
+        "ac": 18,
+        "touch": 13,
+        "flat-footed": 16,
+        "natural": 4
+    },
+    "health": {
+        "hp": 52,
+        "die": 8,
+        "hd": 7
+    },
+    "saves": {
+        "fort": 5,
+        "ref": 5,
+        "will": 6
+    },
+    "immunities": [
+        "acid"
+    ],
+    "speeds": [
+        {
+            "type": null,
+            "speed": 10,
+            "unit": "ft.",
+            "modifier": null
+        }
+    ],
+    "attacks": {
+        "melee": ["slam +9 (1d4+1 plus adhesive)"],
+        "special attacks": ["<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Constrict-Ex-\">constrict</a> (slam, 1d4+1)"]
+    },
+    "abilityScores": {
+        "str": 12,
+        "dex": 14,
+        "con": 17,
+        "int": 10,
+        "wis": 13,
+        "cha": 10
+    },
+    "bab": 5,
+    "cmb": 4,
+    "cmd": {
+        "value": 16,
+        "modifier": "(can't be tripped)"
+    },
+    "feats": [
+        {
+            "displayName": "Improved Initiative",
+            "featName": "Improved Initiative (Combat)",
+            "type": "combat",
+            "modifier": null
+        },
+        {
+            "displayName": "Lightning Reflexes",
+            "featName": "Lightning Reflexes",
+            "type": "general",
+            "modifier": null
+        },
+        {
+            "displayName": "Skill Focus",
+            "featName": "Skill Focus",
+            "type": "general",
+            "modifier": "(<a href=\"https://www.d20pfsrd.com/skills/perception\">Perception</a>)"
+        },
+        {
+            "displayName": "Weapon Focus",
+            "featName": "Weapon Focus (Combat)",
+            "type": "combat",
+            "modifier": "(slam)"
+        }
+    ],
+    "skills": [
+        { "name": "Climb", "value": 11, "modifier": null },
+        { "name": "Disguise", "value": 10, "modifier": "(+30 when mimicking objects)" },
+        { "name": "Knowledge (Dungeoneering)", "value": 10, "modifier": null },
+        { "name": "Perception", "value": 2, "modifier": null },
+        { "name": "Stealth", "value": 10, "modifier": null }
+    ],
+    "skillRacialModifiers": [
+        {
+            "name": "Disguise",
+            "value": 20,
+            "modifier": "when mimicking objects"
+        }
+    ],
+    "languages": [
+        "Common"
+    ],
+    "sqs": [
+        "mimic object"
+    ],
+    "specialAbilities": [
+        {
+            "name": "Adhesive (Ex)",
+            "path": "special-abilities/tiny-mimic/adhesive.html"
+        },
+        {
+            "name": "Mimic Object (Ex)",
+            "path": "special-abilities/tiny-mimic/mimic-object.html"
+        }
+    ],
+    "environment": "any",
+    "organization": "solitary",
+    "treasure": "incidental",
+    "detailsPath": "descriptions/tiny-mimic/details.html"
+}

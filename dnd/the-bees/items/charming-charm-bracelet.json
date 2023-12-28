@@ -1,0 +1,12 @@
+{
+    "name": "Charming Charm Bracelet",
+    "aura": "moderate <a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a> (charm) [mind-affecting]",
+    "cl": "9th",
+    "slot": "hand",
+    "price": "-",
+    "weight": "-",
+    "feats": "<a href=\"https://www.d20pfsrd.com/feats/item-creation-feats/craft-wondrous-item-item-creation/\">Craft Wondrous Item</a>",
+    "spells": "<a href=\"https://www.d20pfsrd.com/magic/all-spells/c/charm-monster/\">Charm Monster</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/p/plane-shift\">Plane Shift</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/s/spectral-hand\">Spectral Hand</a>",
+    "special_req": "-",
+    "cost": "-"
+}

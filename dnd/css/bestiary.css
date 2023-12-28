@@ -1,0 +1,57 @@
+div.statblock {
+    min-width: 100px;
+}
+
+p.title {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(207,226,243);
+    border-top: solid thin rgb(10, 0,105);
+    border-bottom: solid thin rgb(10, 0, 105);
+    padding: 3px;
+}
+
+span.level {
+    float: right;
+    margin-right: 3px;
+}
+
+div.bestiary-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 1vw;
+    place-items: start;
+    grid-template-areas:
+        "statblock image"
+        "ecology ecology";
+}
+/*
+.bestiary-entry-child {
+    background: grey;
+    border: 1px solid green;
+}
+*/
+div.statblock {
+    grid-area: statblock;
+}
+
+div.ecology {
+    grid-area: ecology;
+}
+
+div.bestiary-images {
+    grid-area: image;
+    align-self: stretch;
+    justify-self: center;
+}
+
+.bestiary-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.note {
+    color: rgb(128, 128, 128);
+}

@@ -1,0 +1,12 @@
+{
+    "name": "<mark>Courtly Speaking</mark> Moustache of Noble Dummies",
+    "aura": "moderate <a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a> (figment)",
+    "cl": "6th",
+    "slot": "head",
+    "price": "-",
+    "weight": "-",
+    "feats": "<a href=\"https://www.d20pfsrd.com/feats/item-creation-feats/craft-wondrous-item-item-creation\">Craft Wondrous Item</a>",
+    "spells": "<a href=\"https://www.d20pfsrd.com/magic/all-spells/g/ghost-sound/\">Ghost Sound</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/v/ventriloquism/\">Ventriloquism</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/c/chameleon-scales/\">Chameleon Scales</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/b/biting-words\">Biting Words</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/t/true-strike\">True Strike</a>, <a href=\"https://www.d20pfsrd.com/magic/all-spells/s/sending/\">Sending</a>",
+    "special_req": "",
+    "cost": "-"
+}

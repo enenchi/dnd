@@ -1,0 +1,73 @@
+{
+    "name": "Mephits",
+    "summary": {
+        "alignment": null,
+        "size": null,
+        "type": null,
+        "init": null
+    },
+    "defense": {
+        "acs": {
+            "ac": null,
+            "touch": null,
+            "flat-footed": null
+        },
+        "hp": {
+            "hp": null,
+            "hd": null
+        },
+        "saves": {
+            "fort": null,
+            "ref": null,
+            "will": null
+        },
+        "fast healing": "some while touching its type",
+        "dr": "5/magic",
+        "immune": ["their element type"],
+        "weaknesses": ["weak to its opposite element"]
+    },
+    "offense": {
+        "speeds": [
+            { "type": null, "speed": "ok", "unit": null },
+            { "type": "fly", "speed": "ok", "unit": null }
+        ],
+        "attacks": {
+            "melee": ["2 claws"],
+            "special attacks": ["breath weapon"]
+        }
+    },
+    "statistics": {
+        "str": null,
+        "dex": null,
+        "con": null,
+        "int": null,
+        "wis": null,
+        "cha": null,
+        "bab": null,
+        "cmb": null,
+        "cmd": null,
+        "feats": [
+            { 
+                "name": null,
+                "type": null,
+                "modifier": null
+            }
+        ],
+        "skills": [
+            { "name": null, "value": null }
+        ]
+    },
+    "special abilities": [
+        {
+            "name": null,
+            "desc": null
+        }
+    ],
+    "ecology": {
+        "environment": null,
+        "organization": null
+    },
+    "notes": [
+
+    ]
+}

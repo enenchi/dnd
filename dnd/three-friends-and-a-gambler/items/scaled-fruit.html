@@ -1,0 +1,401 @@
+<!-- CSS -->
+<style>
+    .tablink {
+        border-style: ridge;
+        cursor: pointer;
+        padding: 8px;
+    }
+    
+    .tablink:hover {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .tabcontent {
+        display: none;
+    }
+    
+</style>
+
+<!-- Content -->
+<p>
+This strange object resembles a large fruit covered by dragon-like scales.
+Each scale can be taken off, and a fully covered fruit holds 16 scales. Under the scales is inedible, tough, sour flesh.
+<br><br>
+Each scale is one of four colors: green, red, blue, and gold.
+The fruit regrows 2 scales at midnight each day, randomly rolled from the following table. There can only be one white scale on the fruit.
+</p>
+
+<table id="scale-color-table">
+    <thead>
+        <tr>
+            <th>Result</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="range">0-29</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td class="range">30-59</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td class="range">60-89</td>
+            <td>Blue</td>
+        </tr>
+        <tr>
+            <td class="range">90-94</td>
+            <td>Gold</td>
+        </tr>
+        <tr>
+            <td class="range">95-99</td>
+            <td>White<sup>1</sup></td>
+        </tr>
+    </tbody>
+</table>
+<p class="footnote">
+    <sup>1</sup>If there are two white scales from this fruit in existence, a gold scale is regrown instead.
+    <br>
+</p>
+<button type="button" onclick="color_roller.roll()">Roll Table</button>
+
+<p>
+Each scale holds a random effect based on the color of the scale, but the exact effect is unkown to the user.
+A scale can be plucked from the fruit and attached to a part of the body as a <a href="https://www.d20pfsrd.com/Gamemastering/Combat/#TOC-Move-Actions">move</a> action.
+Once attached, the user can cast the spell contained in the scale, ignoring material or divine focus casting components, without requiring a <a href="https://www.d20pfsrd.com/skills/use-magic-device/">use magic device</a> check.
+After casting a spell in this way, the scale fades away.
+<br><br>
+Scales removed from the fruit disappear at midnight when the fruit regrows.
+If attached to the person possessing the fruit at midnight, a number of scales are able to remain, up to the holder's HD.
+If there are more scales than the holder's HD, the holder can choose which scales disappear and which stay.
+<br><br>
+Each scale attached to a person makes their skin or hide slightly tougher.
+For every 4 scales attached, a person gains a +1 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Enhancement-Bonus">enhancement bonus</a> to the creature's existing <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus">natural armor bonus</a>.
+A creature without natural armor has an effective natural armor bonus of +0.
+<br><br>
+The white scale can be used in one of three ways:
+<br><br>
+<i>Guidance of Luck</i>: The user can ask one question to the gods and recieve an answer. Depending on the complexity or the nature of the god, the answer may be range from clear and straightforward to mysterious and vague. The answer is however, always truthful and answers the question asked.
+<br><br>
+<i>Revelation of Luck</i>: The user can immediately know the effects of the green, red, and blue scales currently on the fruit. Roll the appropriate table and record the result for each scale.
+<br><br>
+<i>Saved Luck</i>: The user can roll a d20 and record the result. At any time, the user may then choose to replace any d20 roll with that result. This can only be done once and further uses of this effect replaces the existing roll result.
+<br><br>
+When a green, red, blue, or gold scale used, the effect is rolled from the following tables depending on the color.
+For green and red scales, the target of the spell must be chosen before rolling.
+</p>
+
+<div class="tab">
+    <button class="tablink" onclick="openTab(event, 'GreenTabContent')" id="GreenTab">Green</button>
+    <button class="tablink" onclick="openTab(event, 'RedTabContent')" id="RedTab">Red</button>
+    <button class="tablink" onclick="openTab(event, 'BlueTabContent')" id="BlueTab">Blue</button>
+    <button class="tablink" onclick="openTab(event, 'GoldTabContent')" id="GoldTab">Gold</button>
+</div>
+<div id="GreenTabContent" class="tabcontent">
+    <table id="green-scale-table">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="range">0-9</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/b/bull-s-strength/">Bull's Strength</a></td>
+            </tr>
+            <tr>
+                <td class="range">10-19</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/c/cat-s-grace/">Cat's Grace</a></td>
+            </tr>
+            <tr>
+                <td class="range">20-29</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/b/bear-s-endurance/">Bear's Endurance</a></td>
+            </tr>
+            <tr>
+                <td class="range">30-39</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/f/fox-s-cunning/">Fox's Cunning</a></td>
+            </tr>
+            <tr>
+                <td class="range">40-49</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/o/owl-s-wisdom/">Owl's Wisdom</a></td>
+            </tr>
+            <tr>
+                <td class="range">50-59</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/e/eagle-s-splendor">Eagle's Splendor</a></td>
+            </tr>
+            <tr>
+                <td class="range">60-79</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/">Cure Light Wounds</a></td>
+            </tr>
+            <tr>
+                <td class="range">80-84</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/a/ant-haul">Ant Haul</a></td>
+            </tr>
+            <tr>
+                <td class="range">85-89</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/u/undetectable-alignment">Undetectable Alignment</a></td>
+            </tr>
+            <tr>
+                <td class="range">90-94</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/s/spider-climb">Spider Climb</a></td>
+            </tr>
+            <tr>
+                <td class="range">95-99</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/i/invisibility">Invisibility</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="green_roller.roll()">Roll Table</button>
+</div>
+<div id="RedTabContent" class="tabcontent">
+    <table id="red-scale-table">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="range">0-19</td>
+                <td>1d4 points of fire damage per HD of the user (maximum 5d4)</td>
+            </tr>
+            <tr>
+                <td class="range">20-39</td>
+                <td>1d4 points of cold damage per HD of the user (maximum 5d4)</td>
+            </tr>
+            <tr>
+                <td class="range">40-59</td>
+                <td>1d4 points of acid damage per HD of the user (maximum 5d4)</td>
+            </tr>
+            <tr>
+                <td class="range">60-79</td>
+                <td>1d4 points of electric damage per HD of the user (maximum 5d4)</td>
+            </tr>
+            <tr>
+                <td class="range">80-99</td>
+                <td>1d4 <a href="https://www.d20pfsrd.com/Gamemastering/conditions/#bleed">bleed</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="red_roller.roll()">Roll Table</button>
+</div>
+<div id="BlueTabContent" class="tabcontent">
+    <table id="blue-scale-table">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="range">0-4</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/m/message/">Message</a></td>
+            </tr>
+            <tr>
+                <td class="range">5-9</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/g/grease/">Grease</a></td>
+            </tr>
+            <tr>
+                <td class="range">10-14</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/s/scriveners-chant/">Scriveners Chant</a></td>
+            </tr>
+            <tr>
+                <td class="range">15-19</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/a/alarm/">Alarm</a></td>
+            </tr>
+            <tr>
+                <td class="range">20-24</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/b/blend">Blend</a> without restriction</td>
+            </tr>
+            <tr>
+                <td class="range">25-29</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/s/secret-sign/">Secret Sign</a></td>
+            </tr>
+            <tr>
+                <td class="range">30-34</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/a/aphasia/">Aphasia</a></td>
+            </tr>
+            <tr>
+                <td class="range">35-39</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/b/borrow-skill/">Borrow Skill</a></td>
+            </tr>
+            <tr>
+                <td class="range">40-44</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/e/echo/">Echo</a></td>
+            </tr>
+            <tr>
+                <td class="range">45-49</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/f/flotsam-vessel">Flotsam Vessel</a></td>
+            </tr>
+            <tr>
+                <td class="range">50-54</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/h/horn-of-pursuit">Horn of Pursuit</a></td>
+            </tr>
+            <tr>
+                <td class="range">55-59</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/k/know-the-enemy">Know the Enemy</a></td>
+            </tr>
+            <tr>
+                <td class="range">60-64</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/n/nature-s-paths">Natures Paths</a></td>
+            </tr>
+            <tr>
+                <td class="range">65-69</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/g/guiding-star">Guiding Star</a></td>
+            </tr>
+            <tr>
+                <td class="range">70-74</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/c/create-water">Create Water</a></td>
+            </tr>
+            <tr>
+                <td class="range">75-79</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/a/abstemiousness">Abstemiousness</a></td>
+            </tr>
+            <tr>
+                <td class="range">80-84</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/f/feather-step">Feather Step</a></td>
+            </tr>
+            <tr>
+                <td class="range">85-89</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/o/obscuring-mist">Obscuring Mist</a></td>
+            </tr>
+            <tr>
+                <td class="range">90-94</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/s/speak-with-animals">Speak with Animals</a></td>
+            </tr>
+            <tr>
+                <td class="range">95-99</td>
+                <td><a href="https://www.d20pfsrd.com/magic/all-spells/m/mud-buddy">Mud Buddy</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="blue_roller.roll()">Roll Table</button>
+</div>
+<div id="GoldTabContent" class="tabcontent">
+    <table id="gold-scale-table">
+        <thead>
+            <tr>
+                <th>Result</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="range">0-15</td>
+                <td>Take 1d6 + 3 ability damage to each ability score except <a href="https://www.d20pfsrd.com/BASICS-ABILITY-SCORES/ability-scores/#constitution_con">Con</a>.</td>
+            </tr>
+            <tr>
+                <td class="range">16-32</td>
+                <td>Automatic success on the next skill check or attack roll, or +30 bonus if the DC is above 50</td>
+            </tr>
+            <tr>
+                <td class="range">33-49</td>
+                <td>Summon a <a href="https://www.d20pfsrd.com/magic-items/artifacts/minor-artifacts/rod-of-spell-sundering-minor-artifact/">Rod of Spell Sundering</a> for the next hour, treating the wielder as a 20th level caster with 1 use of mythic power for the purposes of the rod's effects.</td>
+            </tr>
+            <tr>
+                <td class="range">50-65</td>
+                <td>Summon a <a href="https://www.d20pfsrd.com/bestiary/monster-listings/dragons/dragon/-primal-umbral/umbral-dragon-young">Yound Umbral Dragon</a> for the next hour. This dragon is immediately hostile towards every creature and cannot be calmed.</td>
+            </tr>
+            <tr>
+                <td class="range">66-82</td>
+                <td>Choose a target within eyesight to recover any ability damage, hit points, and most status effects. If the target died within 1 minute, they are brought back to life unless killed by a death effect.</td>
+            </tr>
+            <tr>
+                <td class="range">83-98</td>
+                <td>Immediately drop to 0 hit points. The user is <a href="https://www.d20pfsrd.com/Gamemastering/combat/#TOC-Disabled-0-Hit-Points-">disabled</a> but conscious.</td>
+            </tr>
+            <tr>
+                <td class="range">99</td>
+                <td>Roll again. If this is landed on again, <a href="https://www.d20pfsrd.com/magic/all-spells/w/wish/">wish</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="gold_roller.roll()">Roll Table</button>
+</div>
+
+<!-- Tab Script -->
+<script>
+
+function getUnselectedColor(tabId) {
+    if (tabId == "GreenTab") return "rgba(0, 255, 98, 0.5)";
+    if (tabId == "RedTab") return "rgba(255, 0, 0, 0.5)";
+    if (tabId == "BlueTab") return "rgba(0, 120, 255, 0.5)";
+    if (tabId == "GoldTab") return "rgba(255, 230, 0, 0.5)";
+}
+
+function getSelectedColor(tabId) {
+    if (tabId == "GreenTab") return "rgba(0, 127, 49, 0.5)";
+    if (tabId == "RedTab") return "rgba(127, 0, 0, 0.5)";
+    if (tabId == "BlueTab") return "rgba(0, 60, 127, 0.5)";
+    if (tabId == "GoldTab") return "rgba(127, 115, 0, 0.5)";
+}
+
+function setUnselected(tab) {
+    tab.style.backgroundColor = getUnselectedColor(tab.id);
+    tab.style.fontWeight = "normal";
+}
+
+function setSelected(tab) {
+    tab.style.backgroundColor = getSelectedColor(tab.id);
+    tab.style.fontWeight = "bold";
+}
+
+var currentTab = null;
+var currentTabContent = null;
+function openTab(event, tabContentId) {
+    // Hide current tab
+    if (currentTabContent !== null) {
+        setUnselected(currentTab);
+        currentTabContent.style.display = "none";
+    }
+
+    // Set new tab
+    currentTabContent = document.getElementById(tabContentId);
+    currentTab = event.srcElement;
+
+    // Show new tab
+    setSelected(currentTab);
+    currentTabContent.style.display = "block";
+}
+
+function addListeners(tab) {
+    tab.addEventListener("mouseenter", (event) => {
+        if (tab != currentTab) {
+            tab.style.backgroundColor = getSelectedColor(tab.id);
+        }
+    });
+    tab.addEventListener("mouseleave", (event) => {
+        if (tab != currentTab) {
+            tab.style.backgroundColor = getUnselectedColor(tab.id);
+        }
+    });
+}
+
+setUnselected(document.getElementById("GreenTab"));
+setUnselected(document.getElementById("RedTab"));
+setUnselected(document.getElementById("BlueTab"));
+setUnselected(document.getElementById("GoldTab"));
+
+addListeners(document.getElementById("GreenTab"));
+addListeners(document.getElementById("RedTab"));
+addListeners(document.getElementById("BlueTab"));
+addListeners(document.getElementById("GoldTab"));
+
+document.getElementById("GreenTab").click();
+
+</script>
+
+<!-- Table Script -->
+<script src="/dnd/js/table.js"></script>
+<script>
+var color_roller = new TableRoller("#scale-color-table", ".range", 0, TableRoller.LIGHT_BLUE, 1, 1, 10, 80);
+var green_roller = new TableRoller("#green-scale-table", ".range", 0, TableRoller.LIGHT_BLUE);
+var red_roller = new TableRoller("#red-scale-table", ".range", 0, TableRoller.LIGHT_BLUE);
+var blue_roller = new TableRoller("#blue-scale-table", ".range", 0, TableRoller.LIGHT_BLUE, 2, 3, 10, 80);
+var gold_roller = new TableRoller("#gold-scale-table", ".range", 0, TableRoller.LIGHT_BLUE);
+</script>

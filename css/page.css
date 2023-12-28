@@ -1,0 +1,15 @@
+html {
+    background: url("page-background.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 2vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Brush Script MT", "Lucida Calligraphy", cursive;
+}

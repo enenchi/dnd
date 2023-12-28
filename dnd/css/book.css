@@ -1,0 +1,51 @@
+html {
+    background: url("page-background.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Brush Script MT", "Lucida Calligraphy", cursive;
+}
+
+body {
+    margin: 2vw;
+}
+
+p.divider {
+    font-size: 12px;
+    border-top: solid thin rgb(88, 24, 13);
+    border-bottom: solid thin rgb(88, 24, 13);
+}
+
+table {
+    border-spacing: 0px;
+}
+
+th, td {
+    padding: 4px 12px 4px 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(104, 217, 100, 0.2);
+}
+
+div.entry-block h1 {
+    color: rgb(88, 24, 13);
+    border-bottom: 3px solid rgb(201, 173, 106);
+}
+
+p.footnote {
+    font-size: 12px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+mark > table {
+    background-color: yellow;
+}

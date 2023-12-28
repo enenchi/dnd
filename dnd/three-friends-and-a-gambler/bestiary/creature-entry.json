@@ -1,0 +1,114 @@
+{
+    "name": "",
+    "overviewPath": "descriptions/<name>/overview.html",
+    "cr": "?",
+    "alignment": "N",
+    "size": "Tiny",
+    "type": "aberration",
+    "subtype": null,
+    "init": 0,
+    "senses": [
+        {
+            "type": "special-ability",
+            "name": "darkvision",
+            "value": "60 ft."
+        },
+        {
+            "type": "skill",
+            "name": "Perception",
+            "value": "+14"
+        }
+    ],
+    "ac": {
+        "ac": 10,
+        "touch": 10,
+        "flat-footed": 10,
+        "natural": 0
+    },
+    "health": {
+        "hp": 0,
+        "die": 0,
+        "hd": 0
+    },
+    "saves": {
+        "fort": 0,
+        "ref": 0,
+        "will": 0
+    },
+    "immunities": [
+        "acid"
+    ],
+    "speeds": [
+        {
+            "type": null,
+            "speed": 30,
+            "unit": "ft.",
+            "modifier": null
+        },
+        {
+            "type": "fly",
+            "speed": 80,
+            "unit": "ft.",
+            "modifier": "(average)"
+        }
+    ],
+    "attacks": {
+        "melee": ["2 claws +4 (1d4+1)", "bite +4 (1d4+1)"],
+        "ranged": ["spray +4 touch (musk)"],
+        "special attacks": ["musk"]
+    },
+    "abilityScores": {
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 10,
+        "wis": 10,
+        "cha": 10
+    },
+    "bab": 0,
+    "cmb": 0,
+    "cmd": {
+        "value": 20,
+        "modifier": "(can't be tripped)"
+    },
+    "feats": [
+        {
+            "displayName": "Weapon Finesse",
+            "featName": "Weapon Finesse (Combat)",
+            "type": "combat",
+            "modifier": null
+        },
+        {
+            "displayName": "Ability Focus",
+            "featName": "Ability Focus",
+            "type": "monster",
+            "modifier": "(musk)"
+        }
+    ],
+    "skills": [
+        { "name": "Fly", "value": 8, "modifier": null }
+    ],
+    "skillRacialModifiers": [
+        {
+            "name": "Disguise",
+            "value": 20,
+            "modifier": "when mimicking objects"
+        }
+    ],
+    "languages": [
+        "Common"
+    ],
+    "sqs": [
+        "mimic object"
+    ],
+    "specialAbilities": [
+        {
+            "name": "<ability>",
+            "path": "special-abilities/<name>/<ability>.html"
+        }
+    ],
+    "environment": "",
+    "organization": "",
+    "treasure": "",
+    "detailsPath": "descriptions/<name>/details.html"
+}

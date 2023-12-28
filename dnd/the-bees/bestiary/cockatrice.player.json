@@ -1,0 +1,74 @@
+{
+    "name": "Cockatrice",
+    "summary": {
+        "alignment": null,
+        "size": "small",
+        "type": "magical beast",
+        "init": null
+    },
+    "defense": {
+        "acs": {
+            "ac": 15,
+            "touch": null,
+            "flat-footed": null
+        },
+        "hp": {
+            "hp": "mid 20s-ish",
+            "hd": null
+        },
+        "saves": {
+            "fort": null,
+            "ref": null,
+            "will": null
+        },
+        "fast healing": "none",
+        "dr": "none",
+        "immune": [ null ],
+        "weaknesses": [ null ]
+    },
+    "offense": {
+        "speeds": [
+            { "type": null, "speed": "ok", "unit": null },
+            { "type": "fly", "speed": "good speed", "unit": "(poor manueverability)" }
+        ],
+        "attacks": {
+            "melee": ["bite w/ decent bonus but low damage + petrification"],
+            "ranged": [],
+            "special attacks": []
+        }
+    },
+    "statistics": {
+        "str": null,
+        "dex": null,
+        "con": null,
+        "int": null,
+        "wis": null,
+        "cha": null,
+        "bab": null,
+        "cmb": null,
+        "cmd": null,
+        "feats": [
+            { 
+                "name": null,
+                "type": null,
+                "modifier": null
+            }
+        ],
+        "skills": [
+            { "name": null, "value": null }
+        ]
+    },
+    "special abilities": [
+        {
+            "name": "Petrification",
+            "desc": null
+        }
+    ],
+    "ecology": {
+        "environment": null,
+        "organization": null
+    },
+    "notes": [
+
+    ]
+}

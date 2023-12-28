@@ -1,0 +1,73 @@
+{
+    "name": "Barghest",
+    "summary": {
+        "alignment": "evil",
+        "size": "M",
+        "type": "Outsider",
+        "init": null
+    },
+    "defense": {
+        "acs": {
+            "ac": null,
+            "touch": null,
+            "flat-footed": null
+        },
+        "hp": {
+            "hp": null,
+            "hd": null
+        },
+        "saves": {
+            "fort": null,
+            "ref": null,
+            "will": null
+        },
+        "fast healing": null,
+        "dr": null,
+        "immune": [ null ],
+        "weaknesses": [ null ]
+    },
+    "offense": {
+        "speeds": [
+            { "type": null, "speed": null, "unit": null, "modifier": null }
+        ],
+        "attacks": {
+            "melee": [],
+            "ranged": [],
+            "special attacks": []
+        }
+    },
+    "statistics": {
+        "str": null,
+        "dex": null,
+        "con": null,
+        "int": "intelligent",
+        "wis": null,
+        "cha": null,
+        "bab": null,
+        "cmb": null,
+        "cmd": null,
+        "feats": [
+            { 
+                "name": null,
+                "type": null,
+                "modifier": null
+            }
+        ],
+        "skills": [
+            { "name": null, "value": null }
+        ]
+    },
+    "special abilities": [
+        {
+            "name": null,
+            "desc": null
+        }
+    ],
+    "ecology": {
+        "environment": null,
+        "organization": null
+    },
+    "notes": [
+
+    ]
+}

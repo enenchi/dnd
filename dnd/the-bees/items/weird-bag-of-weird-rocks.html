@@ -1,0 +1,152 @@
+<p>
+This small leather pouch seems to always be full of small pebbles. Whenever someone pulls out one of these pebbles, they instead pull out a stone die of their choosing. The die can be thrown or used as ammo for a sling. Upon contact, the die deals damage according to the side that hits the target. This damage is modified by any abilities of the user or sling, but cannot drop below the amount of damage dealt by the side of the die. The die then disappears.
+<br><br>
+Each morning, the bag replenishes <mark>ten d10s and</mark> an amount of a random type of die according to the table below. The pouch can only hold up to 100 lbs of dice and always weighs 20 lbs. no matter how many dice are in the bag. If the number of dice restored would go over the weight, only the number of dice that can fit are replenished. <mark>The ten d10s are restored before dice from the table and weighs 1 lb. each..</mark> All dice weigh the same once pulled out of the pouch.
+<br><br>
+<mark>
+As long as the bag is within 30 ft of 50 lbs. of stone, the bag is treated as having an infinite amount of d8s, each weighing 1/2 lb.
+</mark>
+</p>
+<table id="restore-table">
+    <thead>
+        <tr>
+            <th>d%</th>
+            <th>Die Type</th>
+            <th># Dice Refilled</th>
+            <th>Weight per die</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="range">01-30</td>
+            <td>d12</td>
+            <td>3</td>
+            <td>2 lbs.</td>
+        </tr>
+        <tr>
+            <td class="range">31-40</td>
+            <td>d20</td>
+            <td>2</td>
+            <td>10 lbs.</td>
+        </tr>
+        <tr>
+            <td class="range">41-50</td>
+            <td>1d8+1 heal<sup>1</sup></td>
+            <td>5</td>
+            <td>2 lbs.</td>
+        </tr>
+        <tr>
+            <td class="range">51-60</td>
+            <td>2d8 + 3 heal<sup>2</sup></td>
+            <td>2</td>
+            <td>4 lbs.</td>
+        </tr>
+        <tr>
+            <td class="range">61-70</td>
+            <td>d2<sup>3</sup></td>
+            <td>20</td>
+            <td>1/2 lb.</td>
+        </tr>
+        <tr>
+            <td class="range">71-78</td>
+            <td>d3<sup>3</sup></td>
+            <td>16</td>
+            <td>1/2 lb.</td>
+        </tr>
+        <tr>
+            <td class="range">79-85</td>
+            <td>d4<sup>3</sup></td>
+            <td>12</td>
+            <td>1/2 lb.</td>
+        </tr>
+        <tr>
+            <td class="range">86-90</td>
+            <td>d6<sup>3</sup></td>
+            <td>10</td>
+            <td>1/2 lb.</td>
+        </tr>
+        <tr>
+            <td class="range">95-100</td>
+            <td>A 9-sided dice with pictues of plants<sup>4</sup></td>
+            <td>1</td>
+            <td>20 lbs.</td>
+        </tr>
+    </tbody>
+</table>
+<p class="footnote"><sup>1</sup> acts as <a href="https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds/">Cure Light Wounds</a>. Does not allow a saving throw.</p>
+<p class="footnote"><sup>2</sup> acts as <a href="https://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds/">Cure Moderate Wounds</a>. Does not allow a saving throw.</p>
+<p class="footnote"><sup>3</sup> any number of these dice can exist outside of the bag.</p>
+<p class="footnote"><sup>4</sup> when rolled, it lands with a plant corresponding to a biome face up then crumbles and unfurls into dried herbs according to the seed table that last for a day and act as if an herbalist had found them using Find Herb. The one who rolled the die uses their character level as their herbalist level for those herbs.</p>
+<button type="button" onclick="roller.roll()">Roll Table</button>
+<table id="seed-dice-table">
+    <thead>
+        <tr>
+            <th>d10</th>
+            <th>Effect</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="range">1</td>
+            <td>Choose a row on the Desert <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">2</td>
+            <td>Choose a row on the Forest <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">3</td>
+            <td>Choose a row on the Grassland <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">4</td>
+            <td>Choose a row on the Jungle <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">5</td>
+            <td>Choose a row on the Mountains <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">6</td>
+            <td>Choose a row on the Tundra <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        <tr>
+            <td class="range">7</td>
+            <td>Choose a row on the Underground <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">8</td>
+            <td>Choose a row on the Underwater <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">9</td>
+            <td>Choose a row on the Wetlands <a href="https://www.d20pfsrd.com/alternative-rule-systems/strange-magic/classes/gourmend/gourmend-herbalist-find-herbs-tables/">Find Herbs Table</a></td>
+        </tr>
+        <tr>
+            <td class="range">10</td>
+            <td>Reroll this table</td>
+        </tr>
+    </tbody>
+</table>
+<button type="button" onclick="seed_roller.roll()">Roll Table</button>
+<p>
+A die must be rolled in some way for the effect to take place (the side that is comes into contact with the target cannot be forced). While one or more healing dice exist in the pouch, the pouch has a faint aura of <a href="https://www.d20pfsrd.com/magic#TOC-Conjuration">conjuration</a> (healing). Any form of healing dice also have this aura when out of the pouch.
+<br><br>
+Only one die can exist out of the pouch at a time <mark>unless otherwise noted</mark>. If a second die is pulled out while the first die still exists, the first die disappears with no effect. A die may be returned to the pouch after removing it. However, a die outside the pouch still counts against the weight limit for replenishing dice.
+<br><br>
+When a pebble is removed from the pouch while there are no dice in the pouch, the user pulls out nothing.
+<br><br>
+A die can be pulled out of the bag and ground into dust. This dust can be used in two ways: by adding water to it or by adding blood to it. Once ground into dust, a die no longer counts against the capacity of the bag, and there is no difference in the dust based on the die it originally came from.
+<br><br>
+When water is added to this dust, it becomes an edible ball of clay. The clay can be safely digested by any living creature and always has a bland taste and slightly gooey consistency when chewed. It takes two balls of clay to feed a medium creature for a day. Additionally, if a viable seed and a pinch of fertile soil is mixed into this ball of clay and placed back into the pouch for 24 hours, the seed and soil are absorbed into the ball of clay. Once they are absorbed, the ball of clay will act as if it were that seed's plant for the purposes of taste, smell, and consistency. This ball of clay spoils in a week at which point it crumbles into dust and cannot be preserved.
+<br><br>
+When blood is added to the dust, it becomes a dark ball of clay bound to the donors of the blood used. When in the hand of a donor, it can be willed into a die from the bag. Once formed from clay in this way, the corresponding die is lost from the bag. The bag and the ball of clay must be on the same plane for this effect to work.
+<br><br>
+When rolled, this blood clay die acts as a die from the bag except instead of disappearing on contact after being rolled, it crumbles to dust that a donor can will to reform into a ball of clay in their hand. <mark>This ball of clay can be attached to a weapon as a swift action. When willed to reform, instead of a ball of clay, the donor can also choose to bring up to 20 lbs. of dice that can exist outside of the bag simultaneously along with their clay ball to form any object. The clay acts as a crude form of that object and weighs what the object usually would. If a weapon, the weapon has its usual properties but incurs a -2 penalty on attacks made with it and can only be used once at whih point it crumbles into dust. The object only crumbles into dust when thrown, swung, or in some way "rolled".</mark> A donor can also will the ball of clay or clay die to crumble to dust without rolling it. This does not return the lost die back to the bag.
+<br><br>
+To destroy a ball of blood clay, it must be placed into the bag for 24 hours. During this time, it cannot be summoned. Any number of clay dice can exist outside of the bag at once as long as the number of clay dice do not exceed the total number of donors whose blood was used to infuse a ball of clay. If this limit is exceeded, the extra balls of clay crumble into dust and fade away and cannot be resummoned, starting with the die farthest from the bag.
+</p>
+<script src="/dnd/js/table.js"></script>
+<script>
+var roller = new TableRoller("#restore-table", ".range", 0, TableRoller.LIGHT_BLUE);
+var seed_roller = new TableRoller("#seed-dice-table", ".range", 0, TableRoller.LIGHT_BLUE);
+</script>
