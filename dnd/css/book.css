@@ -43,9 +43,9 @@ p.footnote {
 }
 
 mark {
-    background-color: yellow;
+    background-color: rgb(156, 239, 111);
 }
 
 mark > table {
-    background-color: yellow;
+    background-color: rgb(156, 239, 111);
 }
