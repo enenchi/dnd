@@ -12,7 +12,7 @@ $PATH_TO_HERE = [
 <!DOCTYPE HTML>
 <html>
     <head>
-        <?php include($_SERVER['DOCUMENT_ROOT']."/dnd/resources/page/header.php"); ?>
+        <?php include($_SERVER['DOCUMENT_ROOT']."/dnd/three-friends-and-a-gambler/resources/page/header.php"); ?>
     </head>
     <body>
         <?php display_nav($PATH_TO_HERE) ?>

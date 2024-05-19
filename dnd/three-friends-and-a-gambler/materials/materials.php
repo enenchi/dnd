@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/dnd/css/book.css">
+        <?php include($_SERVER['DOCUMENT_ROOT']."/dnd/three-friends-and-a-gambler/resources/page/header.php"); ?>
     </head>
     <body>
         <p><a href="/dnd/three-friends-and-a-gambler/">The Hunt</a> > <a href="/dnd/three-friends-and-a-gambler/materials">Materials</a> ></p>
